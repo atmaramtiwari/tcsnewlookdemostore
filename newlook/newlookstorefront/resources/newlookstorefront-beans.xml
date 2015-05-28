@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- [y] hybris Platform Copyright (c) 2000-2015 hybris AG All rights reserved. 
+	This software is the confidential and proprietary information of hybris ("Confidential 
+	Information"). You shall not disclose such Confidential Information and shall 
+	use it only in accordance with the terms of the license agreement you entered 
+	into with hybris. -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="beans.xsd">
+
+	<bean class="com.tcs.facades.product.compare.data.ProductCompareData">
+		<property name="code" type="java.lang.String" />
+		<property name="name" type="java.lang.String" />
+		<property name="currency" type="java.lang.String" />
+		<property name="ean" type="java.lang.String" />
+		<property name="manufactureAid" type="java.lang.String" />
+		<property name="manufacturerName" type="java.lang.String" />
+		<property name="deliveryTime" type="java.lang.String" />
+		<property name="price" type="java.lang.String" />
+		<property name="averageRating" type="java.lang.Double" />
+		<property name="media" type="de.hybris.platform.core.model.media.MediaModel" />
+		<property name="stockStatus" type="de.hybris.platform.basecommerce.enums.StockLevelStatus" />
+		<property name="quantity" type="java.lang.Integer" />
+	</bean>
+
+
+</beans>
