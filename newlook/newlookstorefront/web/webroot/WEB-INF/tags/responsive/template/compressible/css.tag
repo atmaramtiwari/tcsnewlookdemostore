@@ -14,7 +14,7 @@
 
 <%-- Theme CSS files --%>
 <link rel="stylesheet" type="text/css" media="all" href="${themeResourcePath}/css/style.css"/> 
- 
+<link rel="stylesheet" type="text/css" media="all" href="${themeResourcePath}/css/productCompare.css"/> 
 
 <%--  AddOn Theme CSS files --%>
 <c:forEach items="${addOnThemeCssPaths}" var="addOnThemeCss">

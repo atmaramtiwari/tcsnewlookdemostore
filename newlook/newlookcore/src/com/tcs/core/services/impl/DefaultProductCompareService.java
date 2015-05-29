@@ -15,8 +15,8 @@ import de.hybris.platform.servicelayer.media.impl.DefaultMediaService;
 import de.hybris.platform.servicelayer.search.SearchResult;
 import de.hybris.platform.stock.exception.StockLevelNotFoundException;
 import de.hybris.platform.stock.impl.DefaultStockService;
-import de.hybris.platform.util.WeakArrayList;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
@@ -274,13 +274,13 @@ public class DefaultProductCompareService extends AbstractBusinessService implem
 	 */
 	private List<ProductCompareData> getProductCompareData(final List<ProductModel> products)
 	{
-		final List<ProductCompareData> productCompareDataList = new WeakArrayList<ProductCompareData>();
+		final List<ProductCompareData> productCompareDataList = new LinkedList<ProductCompareData>();
 		for (final ProductModel product : products)
 		{
 			final ProductCompareData productCompareData = productCompareConverter.convert(product);
 			try
 			{
-				productCompareData.setMedia(product.getThumbnail());
+				/* productCompareData.setMedia(product.getThumbnail()); */
 				productCompareData.setStockStatus(StockLevelStatus.OUTOFSTOCK);
 				final int totalStock = stockService.getTotalStockLevelAmount(product);
 

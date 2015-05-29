@@ -10,6 +10,8 @@
 	<bean class="com.tcs.facades.product.compare.data.ProductCompareData">
 		<property name="code" type="java.lang.String" />
 		<property name="name" type="java.lang.String" />
+		<property name="size" type="java.lang.String" />
+		<property name="style" type="java.lang.String" />
 		<property name="currency" type="java.lang.String" />
 		<property name="ean" type="java.lang.String" />
 		<property name="manufactureAid" type="java.lang.String" />
@@ -24,3 +26,4 @@
 
 
 </beans>
+

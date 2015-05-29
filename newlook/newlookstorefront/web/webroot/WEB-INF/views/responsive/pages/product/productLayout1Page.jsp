@@ -10,4 +10,8 @@
 	<cms:pageSlot position="UpSelling" var="comp">
 		<cms:component component="${comp}"/>
 	</cms:pageSlot>
+	
+	<cms:pageSlot position="CrossSelling" var="comp">
+		<cms:component component="${comp}"/>
+	</cms:pageSlot>
 </template:page>

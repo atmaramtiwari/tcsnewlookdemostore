@@ -18,8 +18,7 @@
 	</div>
 	<!-- Compare section ends -->
 	<ul class="product-listing product-grid">
-		<c:forEach items="${searchPageData.results}" var="product" varStatus="status">
-			
+		<c:forEach items="${searchPageData.results}" var="product" varStatus="status">			
 			<product:productListerGridItem product="${product}" varstatus="${status.index}" />
 		</c:forEach>
 	</ul>

@@ -1,9 +1,129 @@
-body { font-family:Helvetica, Arial, sans-serif; font-size:12px; }
+ 
 .cl{ clear:both;}
-a{ text-decoration:none; color:#666666;}
+ 
+/* Compare Product CSS */
+
+.compare_chk {
+  margin:0.5%; text-align:left; padding:2%; width:99%;
+  padding-top: 4px;  border: 1px dashed  #c9c9c9;}
  
  
  
+ .compare_cart {
+  background-color: #fff;
+  z-index: 40;
+  top: 0;
+  -webkit-transition: top .4s linear;
+  transition: top .4s linear;}
+.compare_cart_wrapper{
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  font-size: 11px; margin-bottom:10px;
+  height:100px;
+  overflow: visible;
+}
+
+.compare_items{ width:21%;float:left; margin:2px;
+
+  }
+  .cl{ clear:both;}
+  .compare_item {
+  background-color: #fff;  position: relative;
+  border: 1px dotted #ccc; width:100%;  font-size:12px; padding:3px; height:92px; }
+  
+  .btn_blue{
+  background: #007fb8;
+  border: 1px solid #004b91;
+  background: -moz-linear-gradient(top,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+  background: -webkit-linear-gradient(top,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+  background: -o-linear-gradient(top,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+  background: -ms-linear-gradient(top,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);
+  background: linear-gradient(to bottom,#007fb8 1%,#6ebad5 3%,#007fb8 7%,#007fb8 100%);display: inline-block;
+  zoom: 1;
+  line-height: 1.3;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center; padding: 6px 12px;  
+}
+  .btn_blue:hover{color: #fff;}
+.thumb_holder {
+  display: block;
+  float: left;
+  
+  margin: 2px 8px 5px 2px; border: 1px solid #ddd;
+  width:40%;
+}
+
+.thumb_holder img{width:100%; height:auto;}
+
+.delete {
+	background:url(Remove-16.png) no-repeat scroll 0 1px transparent;
+ 
+  cursor: pointer;
+  display: block;
+  height: 12px;
+  position: absolute;
+  right: -5px;
+  top: -4px;
+  width: 12px;
+}
+
+.pdct_des {
+  color:#303030 !important;
+  overflow: hidden;
+  display: block;
+}
+
+
+.compare_controls {
+  float: right;  margin: 20px 10px 2px 5px; 
+ 
+  left: -5px;
+  position: relative;
+  text-align: left;
+  width: 10%;
+}
+
+
+.link{   position: absolute;
+  right: -3px;
+  font-weight: bold;
+  color: rgb(255, 48, 21);
+  clear: left;
+  top: -5px;
+}
+
+
+.black_overlay{
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+		}
+		.white_content {
+		  display: none;
+		  position: absolute;
+		  top: 2%;
+		  left: 3%;
+		  width: 94%;
+		  height: 50%;
+		  padding: 16px;
+		  border: 6px solid rgb(255, 68, 68);
+		  background-color: white;
+		  z-index: 1002;
+		  overflow: auto;
+		}
+
+		
+		
 		.white_content2 {
 		 
 			width:98%;
@@ -14,19 +134,20 @@ a{ text-decoration:none; color:#666666;}
 			z-index:1002;
 			
 		}
-		.white_content2  h1{ padding:0px;margin:0px; font-size:16px;}	
+		 
 		.compare_product { width:100%;overflow: auto;height: 70%;}
 		 .compare_product table {  border:#f2f2f2 solid 1px;}
 		  .compare_product table td{ padding:5px; text-align:center; border-top:#f2f2f2 solid 1px;  border-left: 1px solid #f2f2f2;}
 		    .compare_product table td:first-child{ text-align:left !important; border-left-color: tranparent !important;}
  
-		.compare_product table a{ font-weight:bold;}
+		.compare_product table a{  color:#fff;}
+		.compare_product table a:hover{ text-decoration:none;color:#fff;}
 		.compare_product select{  width: 82%;margin: 5px 0px;}
 		.compare_product .price {font-weight: bold;font-size: 17px;color: #b00;}
 		.compare_product b{color: #390;}
 		.popup_close{ position:absolute; right:-30px; top:-30px;}
 		.prdct_comp{width: 50%;height: 100px;background: #FDF1F8;margin:10px auto 10px auto;border: 1px solid rgb(236, 236, 236);}
-		.prdct_comp img{width:100%; height:auto;}
+		.prdct_comp img{width:100%; height:100%;}
 		.searchable_spec{  font-weight: bold; background-color: #f8f8f8;border: 1px solid #fff; font-size:14px;padding:8px;}
 		.orng_btn{  background: #f75b16; color:#fff;
   border: 1px solid #ec6723;

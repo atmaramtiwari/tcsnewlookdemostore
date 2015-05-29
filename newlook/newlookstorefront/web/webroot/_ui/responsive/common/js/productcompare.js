@@ -45,3 +45,12 @@ $(document).ready(function(){
 		window.location.href = "/newlookstorefront/en/productcompare?productId="+productIdArray;
 	});
 });
+
+
+
+// Code for Google Analytics
+$(document).ready(function(){
+	$('.btn_blue').click(function(){
+		ga('send','event','productcompare','productcompare',1);
+	});
+});
